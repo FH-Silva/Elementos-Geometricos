@@ -30,7 +30,7 @@ header h1 {
 main{
     /* text-align: center; */
     padding: 20px;
-    max-width: 70%;
+    max-width: 50%;
     margin: 20px auto;
     background-color: white;
     border-radius: 5px;
@@ -40,12 +40,10 @@ main{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     text-align: center;
-}
-
-.teste{
-    max-width: 50%;
-}.teste1{
-    max-width: 50%;
+}.teste {
+    max-width: 100%;
+    flex-grow: 1;
+    text-align: center;
 }
 
 form input, label{
@@ -53,13 +51,22 @@ form input, label{
     font-size: 20px;
 }
 
-#ladoQuadrado{
+.classForma{
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
-}#enviar{
+    max-width: 26%;
+}.classButton{
     padding: 5px;
     color: white;
     border-radius: 10px;
     background-color: var(--azulmarinho);
+}
+
+.caixaResult{
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 26%;
+    padding: 10px;
+    margin-left: 5px;
 }
