@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --azulmarinho: #001F3F;
+    --cinzaescuro: #343A40;
+    --cinzaclaro: #6C757D;
+}
+
+body{
+    margin-top: 70px; /*Retirar, caso não for usar o nav*/
+    background-color: var(--cinzaclaro);
+}
+
+header h1 {
+    background-color: var(--cinzaescuro);
+    margin-bottom: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: white;
+}
