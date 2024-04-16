@@ -10,26 +10,29 @@
     <meta name="revised" content="Saturday, April 6th, 2024, 5:15 am">
     <meta name="language" content="Portuguese">
 
+    <link rel="stylesheet" href="estilos/formas.css">
     <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
     <title>Elementos Geométricos: Cubo</title>
 </head>
 <body>
     <nav></nav>
-    <header> 
+    <header>
         <h1>Elementos Geométricos</h1>
     </header>
 
     <main>
         <h2>Cubo</h2>
-        <img src="https://picsum.photos/id/628/600/400" alt=""> <!--Imagem da forma-->
-        <img src="https://picsum.photos/id/633/600/400" alt=""> <!--Imagem da formula-->
+        <div class="image"><img src="https://picsum.photos/id/628/600/400" alt="Cubo"></div> <!--Imagem da forma-->
 
         <form>
             <label for="ladoCubo">Informe um valor para os lados do cubo:</label> <br>
-            <input type="number" id="ladoCubo" name="ladoCubo"> <br>
-            <input type="submit">
+            <input type="number" id="ladoCubo" name="ladoCubo" class="classForma">
+            <input type="submit" value="Calcular" class="classButton">
         </form>
-    </main>
+        <div class="caixaResult">
+            <p id="saida"></p>
+        </div>
+    </main> 
 
     <footer></footer>
 </body>

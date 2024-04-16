@@ -10,6 +10,7 @@
     <meta name="revised" content="Saturday, April 6th, 2024, 5:15 am">
     <meta name="language" content="Portuguese">
 
+    <link rel="stylesheet" href="estilos/formas.css">
     <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
     <title>Elementos Geométricos: Retângulo</title>
 </head>
@@ -21,15 +22,18 @@
 
     <main>
         <h2>Retângulo</h2>
-        <img src="imagens/retangulo1.jpg" alt=""> <!--Imagem da forma-->
+        <div class="image"><img src="imagens/retangulo1.jpg" alt="Retângulo"></div>
 
         <form>
             <label for="larguraRetangulo">Largura:</label> <br>
-            <input type="number" id="larguraRetangulo" name="larguraRetangulo"> <br>
+            <input type="number" id="larguraRetangulo" name="larguraRetangulo" class="classForma"> <br>
             <label for="alturaRetangulo">Altura:</label> <br>
-            <input type="number" id="alturaRetangulo" name="alturaRetangulo"> <br> 
-            <input type="submit">
+            <input type="number" id="alturaRetangulo" name="alturaRetangulo" class="classForma"> <br> 
+            <input type="submit" value="Calcular" class="classButton">
         </form>
+        <div class="caixaResult">
+            <p id="saida"></p>
+        </div>
     </main>
 </body>
 </html>
