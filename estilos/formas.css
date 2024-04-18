@@ -12,8 +12,33 @@
 }
 
 body{
-    margin-top: 70px;
+    margin-top: 60px;
     background-color: var(--cinzaclaro);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color:var(--azulmarinho);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}nav ul{
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}nav ul a{
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}nav ul :hover{
+    transition: background-color 0.3s;
+    background-color: #003972;
 }
 
 header h1 {
@@ -72,7 +97,28 @@ form input, label{
 .caixaResult{
     border: 1px solid black;
     border-radius: 10px;
-    max-width: 26%;
-    padding: 10px;
+    max-width: 22%;
+    padding: 20px;
     margin-left: 5px;   
+}
+p{
+    margin-bottom: 0;
+    text-align: justify;
+    font-size: 18px;
+}
+
+footer{
+    background-color: var(--cinzaescuro);
+    color: white;
+    padding: 20px 10px;
+}.linksFooter{
+    display: flex;
+    justify-content: space-between;
+}footer dt{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}footer dd, footer p{
+    padding: 10px;
+}
+footer a{
+    color: white;
 }
