@@ -20,13 +20,19 @@
     <main>
         <h2>Triângulo</h2>
         <div class="image"><img src="imagens/triangulo1.jpg" alt="Triângulo"></div>
-        <form></form>
+        <form>
+            <label for="base">Digite o valor da base:</label> <br>
+            <input type="number" id="base" name="base" class="classForma" placeholder="Digite um número"> <br>
+            <label for="altura">Digite o valor da altura:</label> <br>
+            <input type="number" id="altura" name="altura" class="classForma" placeholder="Digite um número"> <br>
+            <input type="submit" id="enviar" class="classButton" value="Calcular">
+        </form>
         <div class="caixaResult">
             <p id="saida"></p>
         </div>
     </main>
     <footer></footer>
 </body>
-    <script src="script/quadrado.js"></script>
+    <script src="script/triangulo.js"></script>
     <noscript>Código JavaScript não executado</noscript>
 </html>

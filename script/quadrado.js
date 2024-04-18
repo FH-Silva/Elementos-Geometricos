@@ -1,7 +1,7 @@
-const botao = document.getElementById("enviar"); //Conexão
-botao.addEventListener("click", calculadora); //Espera o evento
-function calculadora (event){ //Função de quando o evento ocorrer
+const botao = document.getElementById("enviar");
+botao.addEventListener("click", calculadora);
+function calculadora (event){
     event.preventDefault(); //Para de atualizar automaticamente
-    let lados = document.getElementById("ladoQuadrado").value; //Pega o valor do forms
-    document.getElementById("saida").innerHTML = "Resultado: " + lados * lados; //Faz o calculo e exibe
+    let lados = document.getElementById("ladoQuadrado").value;
+    document.getElementById("saida").innerText = "Resultado: " + lados * lados; //Faz o calculo e exibe
 };

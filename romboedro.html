@@ -20,13 +20,19 @@
     <main>
         <h2>Romboedro</h2>
         <div class="image"><img src="imagens/romboedro1.jpg" alt="Romboedro"></div>
-        <form></form>
+        <form>
+            <label for="diaMaior">Informe um valor para a diagonal maior:</label> <br>
+            <input type="number" id="diaMaior" class="classForma" name="diaMaior" placeholder="Digite um número"> <br>
+            <label for="diaMenor">Informe um valor para a diagonal menor:</label> <br>
+            <input type="number" id="diaMenor" class="classForma" name="diaMenor" placeholder="Digite um número"> <br>
+            <input type="submit" id="enviar" class="classButton" value="Calcular">
+        </form>
         <div class="caixaResult">
             <p id="saida"></p>
         </div>
     </main>
     <footer></footer>
 </body>
-    <script src="script/quadrado.js"></script>
+    <script src="script/romboedro.js"></script>
     <noscript>Código JavaScript não executado</noscript>
 </html>

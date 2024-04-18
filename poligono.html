@@ -12,21 +12,34 @@
 
     <link rel="stylesheet" href="estilos/formas.css">
     <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
-    <title>Elementos Geométricos: Poligono com N Lados</title>
+    <title>Elementos Geométricos: Polígono Regular com N Lados</title>
 </head>
 <body>
     <nav></nav>
     <header><h1>Elementos Geométrica</h1></header>
     <main>
-        <h2>Poligono Irregular</h2>
-        <div class="image"><img src="" alt="AAAA"></div> <!--Arrumar isso--->
-        <form></form>
+        <h2>Polígono Regular com N Lados</h2>
+        <div class="image"><img src="imagens/poligono1.jpg" alt="Polígonos Regulares"></div>
+        <form>
+            <label for="escolha">Escolha um polígono:</label>
+            <select name="escolha" id="escolha" class="classForma">
+                <option value="pentagono">Pentágono</option>
+                <option value="hexagono">Hexágono</option>
+                <option value="heptagono">Heptágono</option>
+                <option value="octagono">Octágono</option>
+                <option value="eneagono">Eneágono</option>
+                <option value="decagono">Decágono</option>
+            </select> <br>
+                <label for="apotema">Digite o valor da apótema (distância entre centro e o perímetro):</label> <br>
+                <input type="number" id="apotema" class="classForma" name="apotema" placeholder="Digite um número">
+                <input type="submit" id="enviar" class="classButton">
+        </form>
         <div class="caixaResult">
             <p id="saida"></p>
         </div>
     </main>
     <footer></footer>
 </body>
-    <script src="script/quadrado.js"></script>
+    <script src="script/poligono.js"></script>
     <noscript>Código JavaScript não executado</noscript>
 </html>
