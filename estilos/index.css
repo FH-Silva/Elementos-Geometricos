@@ -56,7 +56,7 @@ main div img{
     height: 590px;
 }.sessoes{
     margin: 20px;
-}main div a, main div h2{
+}main div a, main div p{
     max-width: 500px;
     text-decoration: none;
 }.formas{
@@ -64,7 +64,7 @@ main div img{
     margin: auto;
 }.formas :hover{
     background-color: rgb(219, 219, 219);
-    transition: 1.5s;
+    transition: 1s;
 }
 
 h2{
@@ -81,7 +81,29 @@ footer{
     display: flex;
     justify-content: space-between;
 }footer dt{
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }footer a{
     color: white;
+}
+
+@media (max-width: 572px){
+    body{
+        margin-top: 55px;
+    }nav ul a{
+        font-size: 18px;
+        padding: 15px;
+    }header h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px){
+    main div p{
+        max-width: 350px;
+    }
+}
+@media (max-width: 1285px){
+    main .sessoes img{
+        height: 100%;
+    }
 }
